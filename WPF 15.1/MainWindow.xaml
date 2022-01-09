@@ -1,0 +1,192 @@
+﻿<Window x:Class="WPF_15._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_15._1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="content">
+            <Setter Property="Control.FontSize" Value="16"/>
+            <Setter Property="Control.FontWeight" Value="Bold"/>
+            <Setter Property="Control.Foreground" Value="#FFFD710C"/>
+        </Style>
+        <Style x:Key="signature">
+            <Setter Property="Control.FontSize" Value="12"/>
+            <Setter Property="Control.Foreground" Value="Gray"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentReader Grid.Row="0" x:Name="docFlow">
+            <FlowDocument>
+                <Section FontFamily="TimesNewRoman">
+                    <Paragraph FontSize="20" FontWeight="Bold">
+                        Геккон токи: яркий, агрессивный и лазающий по стенам
+                    </Paragraph>
+                    <Paragraph>
+                        <Span Foreground="Chocolate">
+                            <Italic>Оглавление:</Italic>
+                        </Span>
+                    </Paragraph>
+
+                    <List MarkerStyle="UpperRoman">
+                        <ListItem>
+                            <Paragraph>
+                                Описание
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Поведение и образ жизни
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Ареал
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Размножение
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Удивительная способность или как токи лазают по стенам
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                    <Paragraph Style="{StaticResource content}">
+                        I. Описание
+                    </Paragraph>
+                    <Paragraph>
+                        <Span Foreground="Chocolate">
+                            <Italic>Классификация геккона токи:</Italic>
+                        </Span>
+                    </Paragraph>
+                    <Table BorderThickness="2" BorderBrush="LightGray">
+                        <Table.Columns>
+                            <TableColumn/>
+                            <TableColumn/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Семейство</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Гекконовые
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Род</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Настоящие гекконы
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Вид</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Геккон токи (лат. Gekko gecko)
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Bold>Размеры</Bold>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Длина тела: 33-36 смм. Масса: 150-300 гр
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                    <Paragraph Style="{StaticResource signature}">
+                        <Floater Width="300" HorizontalAlignment="Stretch" >
+                            <BlockUIContainer>
+                                <Image Source="Data/2.jpg"/>
+                            </BlockUIContainer>
+                        </Floater>
+                        <Italic>Днем токи, как правило, прячутся в укрытиях, но этот решил погреться на камешке.</Italic>
+                    </Paragraph>
+                    <Paragraph>
+                        Туловище плотное, слегка приплюснутое сверху. Треугольная голова довольно крупная. Плотный хвост обычно достигает 40-45% длины дела. Короткие лапы широко расставлены по бокам, из-за чего создается впечатление, что Токи не ходит, а ползает, медленно волоча брюхо по земле.
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource content}">
+                        II. Поведение и образ жизни
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource signature}">
+                        <Floater Width="300" HorizontalAlignment="Stretch" >
+                            <BlockUIContainer>
+                                <Image Source="Data/1.jpg"/>
+                            </BlockUIContainer>
+                        </Floater>
+                        <Italic>Глаза токи лишены век, поэтому животному часто приходиться удалять пыль и соринки, облизывая глаза длинным языком.
+                        </Italic>
+                    </Paragraph>                    
+                    <Paragraph>
+                        Активны токи ночью. Охотятся на крупных насекомых, беспозвоночных, мелких грызунов, лягушек, птенцов, иногда поедают мелких гекконов и других ящериц, под настроение могут полакомиться фруктами и овощами. В странах Азии люди часто специально впускают токи в свои дома, чтобы те занялись отловом насекомых.
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource content}">
+                        III. Ареал
+                    </Paragraph>
+                    <Paragraph>
+                        Гекконы токи обитают во влажных тропических лесах
+                        <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Юго-Восточная_Азия">Юго-Восточной Азии</Hyperlink> и
+                        <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Океания">Океании:</Hyperlink> Филиппины, Таиланд, Новая Гвинея. В 20 веке были завезены в Северную Америку и на острова Карибского бассейна, где они отлично прижились.
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource content}">
+                        IV.  Размножение
+                    </Paragraph>
+                    <Paragraph>
+                        Брачный период начинается в конце зимы. Яйца самки откладывают в дуплах, прикрепляя их особым клейким секретом к неровностям древесины. В одной кладке 1-2 яйца, но за сезон самка спаривается до пяти раз с интервалом около 40 дней.
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource content}">
+                        V.  Удивительная способность или как токи лазают по стенам
+                    </Paragraph>
+                    <Paragraph Style="{StaticResource signature}">
+                        <Floater Width="300" HorizontalAlignment="Stretch" >
+                            <BlockUIContainer>
+                                <Image Source="Data/3.jpg"/>
+                            </BlockUIContainer>
+                        </Floater>
+                        <Italic> Пальцы токи крупным планом.</Italic>
+                    </Paragraph>                    
+                    <Paragraph>
+                        Самая интересная способность гекконов, и токи в частности - возможность лазания по гладким вертикальным поверхностям (стекло, металл и др.). Лазить по стенам гекконам удается за счет того, что мельчайшие крючкообразные волоски цепляются за мельчайшие неровности поверхности.
+                    </Paragraph>
+                </Section>
+            </FlowDocument>
+        </FlowDocumentReader>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_1"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_2"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
